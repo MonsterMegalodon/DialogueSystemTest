@@ -29,7 +29,7 @@ namespace DS.Windows
             AddGraphView();
             AddToolbar();
 
-            AddStyles();
+            //AddStyles();
         }
 
         private void AddGraphView()
@@ -65,15 +65,15 @@ namespace DS.Windows
             toolbar.Add(resetButton);
             toolbar.Add(miniMapButton);
 
-            toolbar.AddStyleSheets("DialogueSystem/DSToolbarStyles.uss");
+            //toolbar.AddStyleSheets("DialogueSystem/DSToolbarStyles.uss");
 
             rootVisualElement.Add(toolbar);
         }
 
-        private void AddStyles()
-        {
-            rootVisualElement.AddStyleSheets("DialogueSystem/DSVariables.uss");
-        }
+        //private void AddStyles()
+        //{
+        //    rootVisualElement.AddStyleSheets("DialogueSystem/DSVariables.uss");
+        //}
 
         private void Save()
         {

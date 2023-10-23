@@ -67,7 +67,7 @@ namespace DS.Windows
             OnGroupRenamed();
             OnGraphViewChanged();
 
-            AddStyles();
+            //AddStyles();
             AddMiniMapStyles();
         }
 
@@ -578,13 +578,14 @@ namespace DS.Windows
             miniMap.visible = false;
         }
 
-        private void AddStyles()
-        {
-            this.AddStyleSheets(
-                "DialogueSystem/DSGraphViewStyles.uss",
-                "DialogueSystem/DSNodeStyles.uss"
-            );
-        }
+        //private void AddStyles()
+        //{
+        //    Debug.Log("AddStyles does not work");
+        //    this.AddStyleSheets(
+        //        "DialogueSystem/DSGraphViewStyles.uss",
+        //        "DialogueSystem/DSNodeStyles.uss"
+        //    );
+        //}
 
         private void AddMiniMapStyles()
         {
