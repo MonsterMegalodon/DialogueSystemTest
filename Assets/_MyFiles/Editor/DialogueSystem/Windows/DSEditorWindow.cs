@@ -6,7 +6,6 @@ using UnityEngine.UIElements;
 namespace DS.Windows
 {
     using System;
-    using UnityEditor.Experimental.GraphView;
     using Utilities;
 
     public class DSEditorWindow : EditorWindow

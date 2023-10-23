@@ -10,7 +10,6 @@ namespace DS.Windows
     using Data.Save;
     using Elements;
     using Enumerations;
-    using System.Text.RegularExpressions;
     using Utilities;
 
     public class DSGraphView : GraphView
@@ -205,6 +204,7 @@ namespace DS.Windows
                     {
                         continue;
                     }
+
                     DSGroup group = (DSGroup)selectedElement;
 
                     groupsToDelete.Add(group);
@@ -428,6 +428,7 @@ namespace DS.Windows
                 groupErrorData.Groups.Add(group);
 
                 groups.Add(groupName, groupErrorData);
+
                 return;
             }
 
