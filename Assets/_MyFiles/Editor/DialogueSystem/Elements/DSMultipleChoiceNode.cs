@@ -64,7 +64,7 @@ namespace DS.Elements
         private Port CreateChoicePort(object userData)
         {
             Port choicePort = this.CreatePort();
-
+           
             choicePort.userData = userData;
 
             DSChoiceSaveData choiceData = (DSChoiceSaveData)userData;
@@ -99,6 +99,7 @@ namespace DS.Elements
                 "ds-node__choice-text-field"
             );
 
+            choiceTextField.style.width = 80f;
             choicePort.Add(choiceTextField);
             choicePort.Add(deleteChoiceButton);
 

@@ -40,7 +40,10 @@ namespace DS.Elements
             Choices = new List<DSChoiceSaveData>();
             Text = "Dialogue text.";
 
-            SetPosition(new Rect(position, Vector2.zero));
+            //SetPosition(new Rect(position, Vector2.zero));
+            base.style.left = position.x;
+            base.style.top = position.y;
+            style.width = 400.0f;
 
             graphView = dsGraphView;
             defaultBackgroundColor = new Color(29f / 255f, 29f / 255f, 30f / 255f);
