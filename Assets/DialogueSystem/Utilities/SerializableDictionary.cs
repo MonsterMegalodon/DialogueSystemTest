@@ -5,12 +5,8 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class SerializableDictionary
-{
-}
-
 [Serializable]
-public class SerializableDictionary<TKey, TValue> : SerializableDictionary, IDictionary<TKey, TValue>, ISerializationCallbackReceiver
+public class SerializableDictionary<TKey, TValue> : IDictionary<TKey, TValue>, ISerializationCallbackReceiver
 {
     [SerializeField]
     private List<SerializableKeyValuePair> list = new List<SerializableKeyValuePair>();

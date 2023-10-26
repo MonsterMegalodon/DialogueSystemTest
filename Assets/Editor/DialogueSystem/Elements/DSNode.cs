@@ -60,7 +60,7 @@ namespace DS.Elements
             {
                 TextField target = (TextField)callback.target;
 
-                target.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
+                target.value = callback.newValue;/*.RemoveWhitespaces().RemoveSpecialCharacters();*/
 
                 if (string.IsNullOrEmpty(target.value))
                 {

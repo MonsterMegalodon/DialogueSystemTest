@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcd3a8e725ad034498acde44e4fd524f, type: 3}
+  m_Name: Are You NewGraph
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: Are You New
+  <Groups>k__BackingField:
+  - <ID>k__BackingField: 924111ac-f628-4e52-9aed-4ee57ddf9e70
+    <Name>k__BackingField: NewHeregroup
+    <Position>k__BackingField: {x: -7, y: 67}
+  <Nodes>k__BackingField:
+  - <ID>k__BackingField: 52b05c87-77ed-41a9-b724-c9d37f05f602
+    <Name>k__BackingField: startDialog
+    <Text>k__BackingField: HI
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 16ac189f-d032-4c1d-ad00-a7c1253ccf5b
+    <GroupID>k__BackingField: 924111ac-f628-4e52-9aed-4ee57ddf9e70
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 18, y: 204}
+  - <ID>k__BackingField: 9aff5d5b-fbbc-49bf-9560-75a9dd8d3d90
+    <Name>k__BackingField: NewHere
+    <Text>k__BackingField: Thats great are you visiting?
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Yes I am visiting
+      <NodeID>k__BackingField: 99653147-2a6d-4b1e-97b5-3f9468bb4f3a
+    - <Text>k__BackingField: no Good Bye
+      <NodeID>k__BackingField: 8be27bdc-6be1-4fe3-8f7c-85e239441b7e
+    <GroupID>k__BackingField: 924111ac-f628-4e52-9aed-4ee57ddf9e70
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 927, y: 126}
+  - <ID>k__BackingField: 8be27bdc-6be1-4fe3-8f7c-85e239441b7e
+    <Name>k__BackingField: Goodbye
+    <Text>k__BackingField: Bye Bye
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 924111ac-f628-4e52-9aed-4ee57ddf9e70
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1477, y: 254}
+  - <ID>k__BackingField: 99653147-2a6d-4b1e-97b5-3f9468bb4f3a
+    <Name>k__BackingField: DialogueName
+    <Text>k__BackingField: thats great well good luck!
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Next Dialogue
+      <NodeID>k__BackingField: 
+    <GroupID>k__BackingField: 924111ac-f628-4e52-9aed-4ee57ddf9e70
+    <DialogueType>k__BackingField: 0
+    <Position>k__BackingField: {x: 1477, y: 134}
+  - <ID>k__BackingField: 16ac189f-d032-4c1d-ad00-a7c1253ccf5b
+    <Name>k__BackingField: test
+    <Text>k__BackingField: Are you new here
+    <Choices>k__BackingField:
+    - <Text>k__BackingField: Hello yes i am new
+      <NodeID>k__BackingField: 9aff5d5b-fbbc-49bf-9560-75a9dd8d3d90
+    - <Text>k__BackingField: Good Bye
+      <NodeID>k__BackingField: 8be27bdc-6be1-4fe3-8f7c-85e239441b7e
+    <GroupID>k__BackingField: 924111ac-f628-4e52-9aed-4ee57ddf9e70
+    <DialogueType>k__BackingField: 1
+    <Position>k__BackingField: {x: 456, y: 208}
+  <OldGroupNames>k__BackingField:
+  - NewHeregroup
+  <OldUngroupedNodeNames>k__BackingField: []
+  <OldGroupedNodeNames>k__BackingField:
+    list:
+    - Key: NewHeregroup
+      Value:
+      - startDialog
+      - NewHere
+      - Goodbye
+      - DialogueName
+      - test

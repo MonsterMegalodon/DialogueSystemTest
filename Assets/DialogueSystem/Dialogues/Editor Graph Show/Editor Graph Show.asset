@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7708e78eaebbad6448a52060670f2c15, type: 3}
+  m_Name: Editor Graph Show
+  m_EditorClassIdentifier: 
+  <FileName>k__BackingField: Editor Graph Show
+  <DialogueGroups>k__BackingField:
+    list:
+    - Key: {fileID: 11400000, guid: fe1eda2f78c466f4abb644e77e2f1152, type: 2}
+      Value:
+      - {fileID: 11400000, guid: a5e1f7dbddb264d48b6670fcbea9881a, type: 2}
+      - {fileID: 11400000, guid: 73357fde266dcda4a93ebe0bf072668d, type: 2}
+    - Key: {fileID: 11400000, guid: 1775212cf7afa6c4a956ebf8c36af6f4, type: 2}
+      Value:
+      - {fileID: 11400000, guid: fb96c75ead2f9a34599cf2d4a5bc1dbf, type: 2}
+    - Key: {fileID: 11400000, guid: 5949ec7107447714b8658839b6a08362, type: 2}
+      Value:
+      - {fileID: 11400000, guid: e6f2103e6ef477a44a947818201a7e4f, type: 2}
+  <UngroupedDialogues>k__BackingField: []

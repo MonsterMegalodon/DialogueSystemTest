@@ -67,7 +67,6 @@ namespace DS.Windows
             OnGroupRenamed();
             OnGraphViewChanged();
 
-            //AddStyles();
             AddMiniMapStyles();
         }
 
@@ -297,7 +296,7 @@ namespace DS.Windows
             {
                 DSGroup dsGroup = (DSGroup)group;
 
-                dsGroup.title = newTitle.RemoveWhitespaces().RemoveSpecialCharacters();
+                dsGroup.title = newTitle;
 
                 if (string.IsNullOrEmpty(dsGroup.title))
                 {
@@ -571,21 +570,12 @@ namespace DS.Windows
                 anchored = true
             };
 
-            miniMap.SetPosition(new Rect(15, 50, 200, 180));
+            miniMap.SetPosition(new Rect(15, 50, 200, 130));
 
             Add(miniMap);
 
             miniMap.visible = false;
         }
-
-        //private void AddStyles()
-        //{
-        //    Debug.Log("AddStyles does not work");
-        //    this.AddStyleSheets(
-        //        "DialogueSystem/DSGraphViewStyles.uss",
-        //        "DialogueSystem/DSNodeStyles.uss"
-        //    );
-        //}
 
         private void AddMiniMapStyles()
         {

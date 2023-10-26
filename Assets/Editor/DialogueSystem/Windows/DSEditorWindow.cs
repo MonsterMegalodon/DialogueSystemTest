@@ -28,8 +28,6 @@ namespace DS.Windows
         {
             AddGraphView();
             AddToolbar();
-
-            //AddStyles();
         }
 
         private void AddGraphView()
@@ -47,7 +45,7 @@ namespace DS.Windows
 
             fileNameTextField = DSElementUtility.CreateTextField(defaultFileName, "File Name:", callback =>
             {
-                fileNameTextField.value = callback.newValue.RemoveWhitespaces().RemoveSpecialCharacters();
+                fileNameTextField.value = callback.newValue;
             });
 
             saveButton = DSElementUtility.CreateButton("Save", () => Save());
@@ -65,21 +63,14 @@ namespace DS.Windows
             toolbar.Add(resetButton);
             toolbar.Add(miniMapButton);
 
-            //toolbar.AddStyleSheets("DialogueSystem/DSToolbarStyles.uss");
-
             rootVisualElement.Add(toolbar);
         }
-
-        //private void AddStyles()
-        //{
-        //    rootVisualElement.AddStyleSheets("DialogueSystem/DSVariables.uss");
-        //}
 
         private void Save()
         {
             if (string.IsNullOrEmpty(fileNameTextField.value))
             {
-                EditorUtility.DisplayDialog("Invalid file name.", "Please ensure the file name you've typed in is valid.", "Roger!");
+                EditorUtility.DisplayDialog("Invalid file name.", "Please ensure the file name you've typed in is valid.", "File Name!");
 
                 return;
             }
